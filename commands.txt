@@ -1,0 +1,65 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS E:\demo> git push origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS E:\demo> git remote add origin https://github.com/Aavas-99/demo.git
+PS E:\demo> git push -u origin main
+Enumerating objects: 59, done.
+Counting objects: 100% (59/59), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (57/57), done.
+Writing objects: 100% (59/59), 215.29 KiB | 2.47 MiB/s, done.
+Total 59 (delta 32), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (32/32), done.
+To https://github.com/Aavas-99/demo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS E:\demo> git pull
+fatal: unable to access 'https://github.com/Aavas-99/demo.git/': Could not resolve host: github.com
+PS E:\demo> git pull origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 941 bytes | 78.00 KiB/s, done.
+From https://github.com/Aavas-99/demo
+ * branch            main       -> FETCH_HEAD
+   8e2cc4c..6e447f9  main       -> origin/main
+Updating 8e2cc4c..6e447f9
+Fast-forward
+ cgecj.cpp | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cgecj.cpp
+PS E:\demo> git push origin main
+Everything up-to-date
+PS E:\demo> git add --all
+PS E:\demo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   EGJHFSK.txt
+        modified:   cgecj.cpp
+
+PS E:\demo> git commit -m "jahdfsj"
+[main 205222e] jahdfsj
+ 2 files changed, 2 insertions(+)
+ create mode 100644 EGJHFSK.txt
+PS E:\demo> git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 353 bytes | 176.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Aavas-99/demo.git
+   6e447f9..205222e  main -> main

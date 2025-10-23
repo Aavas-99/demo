@@ -4,7 +4,7 @@ using namespace std;
 
 double f(double x)
 {
-    return 3*x-cos(x)-1;
+    return 3*x-cos(x)+1;
 }
 
 void bisection(double x1,double x2)
